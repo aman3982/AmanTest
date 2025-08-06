@@ -1,22 +1,33 @@
-# Team Leave Tracker Excel Template
+# Team Leave Management Excel Templates
 
-A comprehensive Excel template for tracking employee leave requests with professional formatting and automated features.
+A comprehensive set of Excel templates for tracking employee leaves with both detailed tracking and visual calendar views.
+
+## 📁 Available Templates
+
+### 1. Team Leave Tracker (`Team_Leave_Tracker_Template.xlsx`)
+Traditional tabular leave tracking with detailed approval workflow.
+
+### 2. Monthly Leave Calendar (`Monthly_Leave_Calendar.xlsx`)
+Visual monthly calendar view for easy leave visualization and planning.
 
 ## 🚀 Quick Start
 
-### Option 1: Use the Pre-generated Template
-Simply open `Team_Leave_Tracker_Template.xlsx` in Excel and start using it immediately.
+### Option 1: Use Pre-generated Templates
+Simply open either Excel file and start using immediately.
 
-### Option 2: Generate a New Template
+### Option 2: Generate New Templates
 ```bash
 # Install dependencies
 pip install -r requirements.txt
 
-# Generate the template
+# Generate detailed leave tracker
 python3 team_leave_tracker.py
+
+# Generate monthly calendar view
+python3 simple_monthly_calendar.py
 ```
 
-## 📋 Template Features
+## 📋 Template 1: Detailed Leave Tracker Features
 
 ### 🔹 Leave Requests Sheet
 - **Request ID**: Unique identifier for each leave request
@@ -43,40 +54,55 @@ python3 team_leave_tracker.py
 - Instructions for use
 - Quick reference guide
 
-## 🎨 Template Highlights
+## 📅 Template 2: Monthly Calendar Features
 
-- **Professional Styling**: Clean, corporate appearance with branded colors
-- **Data Validation**: Dropdown menus for consistent data entry
-- **Sample Data**: Pre-filled examples to get started quickly
-- **Frozen Headers**: Easy navigation in large datasets
-- **Automatic Formatting**: Date fields and proper column sizing
-- **Multiple Leave Types**: Annual, Sick, Personal, Maternity, Emergency, Study
+### 🔹 Monthly Calendar Sheets
+- **Visual Calendar Layout**: Traditional calendar grid for each month
+- **Daily Leave Tracking**: Multiple employees per day support
+- **Color-Coded Leaves**: Instant visual identification of leave types
+- **Weekend Highlighting**: Automatic weekend detection and styling
+- **Today Indicator**: Current date highlighting
 
-## 📊 Leave Types Included
+### 🔹 Employee Database
+- Simple employee codes (JS, SJ, etc.)
+- Full names and departments
+- Manager information
 
-| Leave Type | Max Days/Year | Carry Forward | Approval Required |
-|------------|---------------|---------------|-------------------|
-| Annual Leave | 25 | Yes | Yes |
-| Sick Leave | 10 | No | No |
-| Personal Leave | 5 | No | Yes |
-| Maternity Leave | 90 | No | Yes |
-| Emergency Leave | 3 | No | Yes |
-| Study Leave | 10 | No | Yes |
+### 🔹 Overview & Instructions
+- Complete usage guide
+- Leave type legend with colors
+- Navigation instructions
 
-## 🔧 Customization
+## 🎨 Leave Type Color Coding
 
-The template is fully customizable:
-- Add/modify leave types in the "Leave Types" sheet
-- Update employee information in the "Employee List" sheet
-- Adjust approval workflows as needed
-- Customize departments and positions
+| Leave Type | Code | Color | Usage |
+|------------|------|-------|-------|
+| Annual Leave | AL | Green | Paid vacation time |
+| Sick Leave | SL | Red | Medical leave |
+| Personal Leave | PL | Teal | Personal time off |
+| Maternity Leave | ML | Purple | Maternity/Paternity leave |
+| Emergency Leave | EL | Orange | Emergency situations |
+| Training Leave | TL | Blue | Training/Development |
 
-## 📝 Usage Instructions
+## 📝 How to Use Monthly Calendar
 
-1. **Setup**: Enter your team's information in the "Employee List" sheet
-2. **Configure**: Adjust leave types and policies in the "Leave Types" sheet
-3. **Track**: Record leave requests in the "Leave Requests" sheet
-4. **Monitor**: Use the "Leave Summary" sheet for team overview
+1. **Setup**: Check employee codes in 'Employees' sheet
+2. **Enter Leaves**: Click on calendar cells and enter `[Code]-[Type]`
+   - Example: `JS-AL` = John Smith on Annual Leave
+3. **Visual Tracking**: Leaves automatically color-coded
+4. **Navigation**: Use sheet tabs for different months
+
+## 📊 Template Comparison
+
+| Feature | Leave Tracker | Monthly Calendar |
+|---------|---------------|------------------|
+| **View Type** | Table/List | Visual Calendar |
+| **Best For** | Detailed tracking | Quick visualization |
+| **Approval Workflow** | ✅ Full workflow | ❌ Basic only |
+| **Visual Planning** | ❌ Limited | ✅ Excellent |
+| **Data Analysis** | ✅ Comprehensive | ❌ Basic |
+| **Team Overview** | ✅ Dashboard | ✅ Monthly view |
+| **Sample Data** | ✅ Included | ✅ Included |
 
 ## 🛠️ Technical Requirements
 
@@ -88,15 +114,23 @@ The template is fully customizable:
 
 ```
 /workspace/
-├── Team_Leave_Tracker_Template.xlsx    # Ready-to-use Excel template
-├── team_leave_tracker.py               # Template generator script
+├── Team_Leave_Tracker_Template.xlsx     # Detailed tracking template
+├── Monthly_Leave_Calendar.xlsx          # Visual calendar template
+├── team_leave_tracker.py               # Detailed tracker generator
+├── simple_monthly_calendar.py          # Calendar generator
 ├── requirements.txt                     # Python dependencies
 └── README.md                           # This documentation
 ```
 
+## 🎯 Usage Recommendations
+
+- **Use Leave Tracker for**: HR departments, formal approval processes, detailed reporting
+- **Use Monthly Calendar for**: Team managers, visual planning, quick leave overview
+- **Use Both**: Combine for comprehensive leave management system
+
 ## 🤝 Support
 
-For questions or customization requests, please refer to the instructions within the Excel template or modify the Python generator script to meet your specific needs.
+Both templates include built-in instructions and sample data. Modify the Python generator scripts to customize for your specific organizational needs.
 
 ---
 
